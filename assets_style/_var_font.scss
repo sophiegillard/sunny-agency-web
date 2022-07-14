@@ -1,0 +1,98 @@
+
+// COLOURS
+$grey-title-white-card-and-names: #24303E;
+$grey-text-white-card: #808397;
+$grey-text-comment: #5B636D; 
+
+$green-green-card:#24554A;
+$light-green: #458D7E;
+$blue-blue-card:#052C3B;
+
+$light-grey-details:#A7AAAD;
+
+$underline_yellow:#fad400;
+$underline-pink:#FE7766;
+
+$underline_yellow_fade:#fad4007a;
+$underline-pink_fade:#fe786690;
+$white_fade:rgba(255, 255, 255, 0.585);
+
+
+
+// FONTS & FONT STYLES
+@mixin font-text {
+    font-family: "Barlow", sans-serif;
+    font-weight:400;
+    text-align: center;
+}
+@mixin font-title {
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    text-align: center;
+}
+
+@mixin text-white-card($color){
+    position: absolute;
+    
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    /* or 178% */
+    text-align: center;
+    letter-spacing: -0.128571px;
+    }
+
+$base-font-size: 16px;
+
+// IMAGES
+@mixin background-images-text{
+    height:37.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@mixin card{
+    padding: 4rem 1.5rem 4rem 1.5rem;  
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+@media screen and (min-width:376px) {
+
+
+$base-font-size-pc: 60px;
+
+}
+
+// Underline
+@mixin learnMoreMix{
+        text-decoration: none;
+        @include font-title;
+        color:$grey-title-white-card-and-names;
+        text-transform: uppercase;
+        font-size: 0.938rem;
+        line-height: 1.563rem;
+        letter-spacing: 0.063rem;
+
+        &:hover{
+            text-decoration: none;
+    }
+   
+}
+@mixin learnMore_underline ($color, $colorhover){
+    background-image: linear-gradient(to bottom, transparent 50%, $color 50%);
+    border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: 100% 0.9em;
+  background-position: 0 96%;
+    &:hover{
+        background-image: linear-gradient(to bottom, transparent 50%, $colorhover 50%);
+    }
+
+}

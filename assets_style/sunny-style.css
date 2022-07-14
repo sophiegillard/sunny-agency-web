@@ -1,0 +1,394 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+body {
+  font-family: "Barlow", sans-serif;
+  background-color: #FFFCF8;
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.header-block {
+  max-width: 100%;
+  height: 100vh;
+  background-image: url("1orange.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Style the navigation menu */
+}
+.header-block .header-block-title {
+  font-size: 2rem;
+  line-height: 3.083rem;
+  text-align: center;
+  letter-spacing: 0.391rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-align: center;
+  color: white;
+  width: 70%;
+  text-transform: uppercase;
+  position: absolute;
+  top: 13.5rem;
+}
+.header-block .header-block-logo {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+.header-block .header-block-topnav {
+  overflow: hidden;
+  position: relative;
+  width: 50vw;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  /* Style navigation menu links */
+  /* Style the hamburger menu */
+  /* Add a grey background color on mouse-over */
+  /* Style the active link (or home/logo) */
+}
+.header-block .header-block-topnav #myLinks {
+  display: none;
+  background-color: #FFFCF8;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.header-block .header-block-topnav .link-contact {
+  background-color: #FBD600;
+  color: #24303E;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-align: center;
+  width: 50%;
+  border-radius: 50px;
+}
+.header-block .header-block-topnav a {
+  color: #A7AAAD;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  justify-self: center;
+}
+.header-block .header-block-topnav .icon {
+  height: 7rem;
+  width: auto;
+  background-image: url("assets_pictures/menuW.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.header-block .header-block-topnav a:hover {
+  font-weight: bolder;
+}
+.header-block .header-block-topnav .active {
+  background-color: none;
+  opacity: 0;
+  color: blue;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.content .card {
+  padding: 4rem 1.5rem 4rem 1.5rem;
+  justify-content: space-between;
+}
+.content h2, .content h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.438rem;
+  letter-spacing: -0.014rem;
+}
+.content .text-card {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.125rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  line-height: 1.875rem;
+  letter-spacing: -0.008rem;
+}
+.content .learnMore {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-align: center;
+  color: #24303E;
+  text-transform: uppercase;
+  font-size: 0.938rem;
+  line-height: 1.563rem;
+  letter-spacing: 0.063rem;
+  background-image: linear-gradient(to bottom, transparent 50%, rgba(254, 120, 102, 0.5647058824) 50%);
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: 100% 0.9em;
+  background-position: 0 96%;
+}
+.content .learnMore:hover {
+  text-decoration: none;
+}
+.content .learnMore:hover {
+  background-image: linear-gradient(to bottom, transparent 50%, #FE7766 50%);
+}
+.content .learnMore1 {
+  background-image: linear-gradient(to bottom, transparent 50%, rgba(250, 212, 0, 0.4784313725) 50%);
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: 100% 0.9em;
+  background-position: 0 96%;
+}
+.content .learnMore1:hover {
+  background-image: linear-gradient(to bottom, transparent 50%, #fad400 50%);
+}
+.content .content-third-el {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.content h4 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 1.75rem;
+  padding-bottom: 1rem;
+}
+.content .card-content {
+  text-align: center;
+  padding: 98% 10% 0% 10%;
+}
+.content .graphic {
+  background-image: url("4cerise.png");
+  color: #24554A;
+  height: 37.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.content .photography {
+  background-image: url("5mandarine.png");
+  color: #052C3B;
+  height: 37.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.client-testimonials {
+  padding: 4rem 1.5rem 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.client-testimonials h5 {
+  font-family: "Fraunces 9pt Soft";
+  font-weight: 900;
+  line-height: 1.25rem;
+  text-align: center;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  color: #A7AAAD;
+  padding-bottom: 3rem;
+}
+.client-testimonials .client-photo {
+  justify-self: center;
+  padding-top: 3rem;
+}
+.client-testimonials .client-comment {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  text-align: center;
+  letter-spacing: -0.008rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #5B636D;
+}
+.client-testimonials .client-name {
+  padding-bottom: 0.56rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  text-align: center;
+  letter-spacing: -0.008rem;
+}
+.client-testimonials .client-job {
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.563rem;
+  text-align: center;
+  letter-spacing: -0.006rem;
+  color: #A7AAAD;
+}
+
+.end-picture {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+}
+.end-picture img {
+  height: 50%;
+  width: 50%;
+}
+
+footer {
+  background-color: #90D4C6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 18rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+footer .footer-navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+footer a {
+  text-decoration: none;
+  color: #458D7E;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.563rem;
+  letter-spacing: -0.008rem;
+}
+footer a:hover {
+  color: white;
+}
+footer .footer-social-media {
+  display: flex;
+  flex: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 160px;
+}
+
+@media screen and (min-width: 450px) {
+  /* HEADER */
+  .header-block .header-block-topnav {
+    display: flex;
+    justify-content: flex-end;
+    top: -2rem;
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    /* Style navigation menu links */
+    /* Style the hamburger menu */
+    /* Add a grey background color on mouse-over */
+  }
+  .header-block .header-block-topnav #myLinks {
+    display: flex;
+    background: none;
+  }
+  .header-block .header-block-topnav .link-contact {
+    background-color: white;
+    color: #24303E;
+  }
+  .header-block .header-block-topnav a {
+    color: white;
+  }
+  .header-block .header-block-topnav .icon {
+    display: none;
+  }
+  .header-block .header-block-topnav .link-contact:hover {
+    background-color: rgba(255, 255, 255, 0.585);
+    color: white;
+    font-weight: 900;
+  }
+  /*CONTENU*/
+  .content section {
+    display: flex;
+    flex-direction: row;
+  }
+  .content .content-image {
+    max-width: 50%;
+    min-width: 50%;
+    height: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .content .content-first-el {
+    flex-direction: row-reverse;
+  }
+  .content .card {
+    justify-content: center;
+    padding: 15% 10% 15% 10%;
+    size: 50%;
+  }
+  .content h2, .content h3, .content .white-card {
+    text-align: left;
+  }
+  .content .graphic, .content .photography {
+    max-width: 50%;
+    min-width: 50%;
+    background-size: cover;
+  }
+  .content .card-content {
+    width: 21rem;
+    padding: 50% 10% 20% 10%;
+  }
+  /*TESTIMONIALS*/
+  .client-testimonials .client-testimonials-box {
+    display: flex;
+    flex-direction: row;
+  }
+  .client-testimonials .client {
+    flex: 20%;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  /*Photos de fin*/
+  .end-picture {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: 25%;
+    size: auto;
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex: 1 1 1 1;
+  }
+  .end-picture img {
+    width: 100%;
+    height: auto;
+  }
+  /*FOOTER*/
+  footer {
+    padding: 5% 40% 5% 40%;
+  }
+}/*# sourceMappingURL=sunny-style.css.map */
